@@ -1,1 +1,3 @@
-console.log('React course')
+window.addEventListener('load',()=>{
+    console.log('React course')
+})

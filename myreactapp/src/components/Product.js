@@ -1,10 +1,14 @@
  import { Component } from "react";
-
+import Add from "./Add";
  class Product extends Component{
      render(){
+         const{product, addToCart}=this.props
          return (
              <p>
-                 Buenas buenas, esto es un Producto individual
+                 {product.name}
+                 <Add onClick={()=>addToCart(product)}>
+                     Agrega al carro
+                 </Add>
              </p>
          )
      }
